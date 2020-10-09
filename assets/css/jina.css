@@ -1,0 +1,456 @@
+.Jina_Root.Jina_Admin {
+  /*transition: padding-top 1.5s;*/ }
+  .Jina_Root.Jina_Admin:hover {
+    padding-top: 30px; }
+  .Jina_Root.Jina_Admin .JinaComponent.unvisible {
+    display: none; }
+  .Jina_Root.Jina_Admin .JinaComponentContent {
+    box-sizing: border-box;
+    padding: 0px 0px 0px 0px; }
+  .Jina_Root.Jina_Admin .JinaComponent:hover {
+    /*&.JinaComponent:last-child {
+      padding-bottom: 30px;
+    }*/ }
+    .Jina_Root.Jina_Admin .JinaComponent:hover.JinaComponent:first-child {
+      padding-top: 30px; }
+    .Jina_Root.Jina_Admin .JinaComponent:hover.Jina_Column {
+      padding-top: 0px !important;
+      padding-bottom: 30px !important; }
+    .Jina_Root.Jina_Admin .JinaComponent:hover > .JinaComponentManager:not(.unvisible) > .JinaComponentManagerMenu {
+      /*display: flex;*/
+      padding: 5px;
+      border: 1px solid #ccc;
+      max-height: 100%;
+      transition: max-height 0.3s; }
+  .Jina_Root.Jina_Admin .Jina_Bloc:hover .JinaColumnHandle:not(.unvisible) {
+    display: block; }
+  .Jina_Root.Jina_Admin .JinaColumnHandle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1px;
+    height: 100%;
+    border-left: 1px solid #aaa;
+    cursor: ew-resize;
+    z-index: 9999;
+    display: none; }
+    .Jina_Root.Jina_Admin .JinaColumnHandle div {
+      width: 12px;
+      background: #aaa;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 50%;
+      top: 25%;
+      left: -6px;
+      position: absolute; }
+  .Jina_Root.Jina_Admin .JinaComponentManager {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 20px);
+    box-sizing: border-box; }
+    .Jina_Root.Jina_Admin .JinaComponentManager > .JinaComponentManagerMenu {
+      box-sizing: border-box;
+      display: flex;
+      overflow: hidden;
+      padding: 0px;
+      border: 0px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(100% + 2px);
+      margin: 0;
+      position: absolute;
+      left: -1px;
+      background: #eee;
+      min-width: 150px;
+      z-index: 999;
+      max-height: 0px; }
+      .Jina_Root.Jina_Admin .JinaComponentManager > .JinaComponentManagerMenu.JinaTop {
+        top: -32px;
+        border-radius: 3px 3px 0 0; }
+      .Jina_Root.Jina_Admin .JinaComponentManager > .JinaComponentManagerMenu.JinaBottom {
+        display: none;
+        bottom: -32px;
+        border-radius: 0 0 3px 3px; }
+      .Jina_Root.Jina_Admin .JinaComponentManager > .JinaComponentManagerMenu:hover + div {
+        background: linear-gradient(120deg, #fff, #eee, #ddd, #ccc, #ddd, #eee, #fff); }
+  .Jina_Root.Jina_Admin .JinaPlaceholder {
+    border: 2px dotted #ccc;
+    min-height: 40px; }
+  .Jina_Root.Jina_Admin .JinaRootManager {
+    position: relative;
+    width: 100%;
+    box-sizing: content-box; }
+
+.JinaRootManager:hover {
+  border: 1px solid #ccc;
+  /*padding: 20px 0px 20px 0px;*/ }
+.JinaRootManager > .JinaRootManagerMenu {
+  position: absolute;
+  box-sizing: border-box;
+  height: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% + 2px);
+  left: -1px;
+  background: #eee;
+  min-width: 150px;
+  border: 1px solid #ccc;
+  z-index: 999;
+  display: none; }
+  .JinaRootManager > .JinaRootManagerMenu.JinaTop {
+    top: -35px;
+    border-radius: 3px 3px 0 0; }
+  .JinaRootManager > .JinaRootManagerMenu.JinaBottom {
+    bottom: -35px;
+    border-radius: 0 0 3px 3px; }
+  .JinaRootManager > .JinaRootManagerMenu button {
+    font-size: 18px; }
+.JinaRootManager:hover > .JinaRootManagerMenu {
+  display: flex; }
+
+.JinaNew {
+  height: 50px;
+  width: 100%;
+  text-align: center; }
+  .JinaNew button {
+    display: none; }
+  .JinaNew:hover button {
+    display: inline-block;
+    font-size: 48px;
+    cursor: pointer;
+    background: #fff;
+    color: #ccc;
+    border: 1px dotted #ccc; }
+    .JinaNew:hover button:hover {
+      background: #ccc;
+      color: #fff; }
+
+#JinaPopup {
+  display: none; }
+  #JinaPopup label {
+    display: inline-block;
+    width: 150px;
+    height: 25px;
+    vertical-align: top; }
+  #JinaPopup input {
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    padding: 5px; }
+    #JinaPopup input.xsmall {
+      width: 100px; }
+    #JinaPopup input.small {
+      width: 200px; }
+    #JinaPopup input.medium {
+      width: 300px; }
+    #JinaPopup input.large {
+      width: 400px; }
+    #JinaPopup input.xlarge {
+      width: 500px; }
+  #JinaPopup textarea.xsmall {
+    height: 100px; }
+  #JinaPopup textarea.small {
+    height: 180px; }
+  #JinaPopup textarea.medium {
+    height: 300px; }
+  #JinaPopup textarea.large {
+    height: 400px; }
+  #JinaPopup textarea.xlarge {
+    height: 500px; }
+  #JinaPopup .JinaPopupField {
+    margin-bottom: 5px; }
+  #JinaPopup .JinaPopupFieldInner {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top; }
+  #JinaPopup .JinaPopupFieldAction {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #ccc; }
+    #JinaPopup .JinaPopupFieldAction:hover {
+      background: #a44;
+      color: #ccc; }
+  #JinaPopup h1 {
+    font-size: 24px;
+    text-align: center;
+    height: 60px;
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    background: linear-gradient(90deg, #fff, #f6f6f6, #fff); }
+  #JinaPopup .JinaPopupOnglet {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    display: none;
+    overflow-y: auto; }
+    #JinaPopup .JinaPopupOnglet.active {
+      display: block; }
+  #JinaPopup .JinaPopupOngletHandles {
+    height: 40px; }
+  #JinaPopup .JinaPopupOngletHandle {
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    border-width: 1px 1px 0px 1px;
+    border-color: #ccc;
+    border-style: solid;
+    border-radius: 0px 5px 0px 0px;
+    padding: 0px 5px 0px 5px;
+    margin: 5px 5px 0px 0px; }
+    #JinaPopup .JinaPopupOngletHandle:hover {
+      background-color: #a44;
+      color: #ccc;
+      height: 40px;
+      margin-top: 0px;
+      padding-top: 5px; }
+    #JinaPopup .JinaPopupOngletHandle.active {
+      background-color: #933;
+      color: #eee;
+      height: 40px;
+      margin-top: 0px;
+      padding-top: 5px; }
+    #JinaPopup .JinaPopupOngletHandle h2 {
+      font-size: 18px;
+      margin: 5px; }
+  #JinaPopup .JinaPopupSection {
+    padding: 0px;
+    margin-bottom: 5px; }
+    #JinaPopup .JinaPopupSection:not(:last-child) {
+      border-bottom: 1px dotted #ccc; }
+    #JinaPopup .JinaPopupSection .JinaPopupFields {
+      margin: 5px; }
+      #JinaPopup .JinaPopupSection .JinaPopupFields.closed {
+        display: none; }
+    #JinaPopup .JinaPopupSection h3 {
+      cursor: pointer;
+      background-color: #666;
+      color: #ccc;
+      padding: 5px;
+      margin: 0px;
+      font-size: 16px; }
+  #JinaPopup #JinaPopupInner {
+    height: calc(100% - 110px);
+    width: calc(100% - 30px);
+    position: absolute; }
+  #JinaPopup #JinaPopupButtons {
+    height: 60px;
+    margin: 0px;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: linear-gradient(90deg, #fff, #eee, #fff); }
+  #JinaPopup .JinaPopupButton {
+    position: relative;
+    float: right;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px; }
+    #JinaPopup .JinaPopupButton:hover {
+      background-color: #a44;
+      color: #ccc; }
+  #JinaPopup .JinaPopupFieldAction.active {
+    background-color: #a44;
+    color: #ccc; }
+  #JinaPopup .JinaPopupFieldOptions {
+    display: none; }
+  #JinaPopup #lngSwitch {
+    position: absolute;
+    right: 5px;
+    z-index: 10;
+    background: #fff; }
+    #JinaPopup #lngSwitch:hover {
+      border: 1px solid #ccc;
+      max-width: 300px;
+      min-width: 50px;
+      padding: 5px; }
+      #JinaPopup #lngSwitch:hover a {
+        display: inline-block; }
+    #JinaPopup #lngSwitch a {
+      display: none;
+      text-align: center;
+      border: 1px solid #ccc;
+      width: 35px;
+      height: auto;
+      margin: 5px;
+      padding: 5px; }
+      #JinaPopup #lngSwitch a:hover {
+        background: #eee; }
+      #JinaPopup #lngSwitch a.active {
+        display: inline-block;
+        background: #eee; }
+      #JinaPopup #lngSwitch a img {
+        max-width: 25px;
+        max-height: 25px; }
+  #JinaPopup .Jina-drop {
+    border: 2px dashed #ccc;
+    cursor: pointer; }
+    #JinaPopup .Jina-drop div, #JinaPopup .Jina-drop img {
+      cursor: default; }
+  #JinaPopup .Jina-doc {
+    margin-top: 10px; }
+    #JinaPopup .Jina-doc div, #JinaPopup .Jina-doc img {
+      cursor: pointer; }
+  #JinaPopup .Jina-drop, #JinaPopup .Jina-doc {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden; }
+    #JinaPopup .Jina-drop input[type="file"], #JinaPopup .Jina-doc input[type="file"] {
+      position: absolute;
+      clip: rect(1px, 1px, 1px, 1px);
+      padding: 0px;
+      border: 0px none;
+      height: 1px;
+      width: 1px;
+      overflow: hidden; }
+    #JinaPopup .Jina-drop.over, #JinaPopup .Jina-doc.over {
+      background: #ccc; }
+    #JinaPopup .Jina-drop div, #JinaPopup .Jina-doc div {
+      position: relative;
+      max-width: 100%;
+      border: 1px solid #ccc;
+      margin: 2px;
+      padding: 2px;
+      overflow-x: hidden; }
+      #JinaPopup .Jina-drop div span, #JinaPopup .Jina-doc div span {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 100%; }
+      #JinaPopup .Jina-drop div .fa-trash, #JinaPopup .Jina-doc div .fa-trash {
+        display: none;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        cursor: pointer;
+        background: #fff;
+        padding: 2px;
+        height: 19px;
+        width: 17px; }
+        #JinaPopup .Jina-drop div .fa-trash:hover, #JinaPopup .Jina-doc div .fa-trash:hover {
+          font-size: 18px;
+          height: 24px;
+          width: 20px;
+          color: #eee;
+          background: #933; }
+      #JinaPopup .Jina-drop div:hover .fa-trash, #JinaPopup .Jina-doc div:hover .fa-trash {
+        display: block; }
+  #JinaPopup .Jina-drop div {
+    height: 80px; }
+    #JinaPopup .Jina-drop div img {
+      max-height: 100%; }
+  #JinaPopup .Jina-doc div {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    overflow: hidden; }
+    #JinaPopup .Jina-doc div.JinaImg {
+      height: auto;
+      width: auto; }
+      #JinaPopup .Jina-doc div.JinaImg:first-child {
+        width: 100%; }
+        #JinaPopup .Jina-doc div.JinaImg:first-child img {
+          max-height: 600px;
+          max-width: 100%; }
+    #JinaPopup .Jina-doc div a {
+      margin: auto; }
+      #JinaPopup .Jina-doc div a img {
+        max-height: 200px;
+        max-width: 250px; }
+  #JinaPopup .Jina-drop-helper {
+    position: absolute;
+    top: 20px;
+    margin-left: 5px;
+    background: #e9e9e9;
+    z-index: 10;
+    padding: 0px 5px 0px 5px; }
+  #JinaPopup .JinaSubmit {
+    position: relative;
+    width: 100%;
+    margin: 5px 0px; }
+    #JinaPopup .JinaSubmit .jauge {
+      display: none;
+      background: #ccc;
+      position: absolute; }
+
+#JinaLibrary {
+  display: none;
+  position: relative; }
+  #JinaLibrary li {
+    position: relative;
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 1px dotted #ccc; }
+    #JinaLibrary li:hover {
+      background: #a44;
+      color: #ccc; }
+      #JinaLibrary li:hover > ul {
+        display: block; }
+  #JinaLibrary ul {
+    position: absolute;
+    left: 145px;
+    top: 0px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    width: 150px;
+    display: none;
+    box-sizing: border-box;
+    background: #fff; }
+  #JinaLibrary > ul {
+    position: initial;
+    display: block;
+    width: 0px;
+    padding: 0px;
+    border: none; }
+    #JinaLibrary > ul > li {
+      position: absolute;
+      border: none; }
+    #JinaLibrary > ul:hover > li {
+      background: #fff; }
+    #JinaLibrary > ul > li > ul {
+      left: 10px;
+      top: 10px;
+      display: block; }
+
+.Jina_Bloc {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  left: 50%;
+  background: linear-gradient(90deg, #fff, #aaa, #933); }
+
+.Jina_Bloc_Container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.Jina_Column {
+  position: relative; }
+
+#Jina-1 {
+  margin: 10px 10%; }
+
+/*# sourceMappingURL=jina.css.map */

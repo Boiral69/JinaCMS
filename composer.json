@@ -1,0 +1,12 @@
+{
+  "name": "Boiral/JinaCMS",
+  "description": "Jina Is Not A CMS",
+  "minimum-stability": "stable",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Phil Boiral",
+      "email": "philippe.boireaud@gmail.com"
+    }
+  ]
+}
